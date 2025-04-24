@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inclusão Digital Sobre Rodas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #1c1c1c;
+    }
+
+    header {
+      background: url('./img/buslab-logo.png') center/contain no-repeat;
+      background-color: #0a3871;
+      color: white;
+      padding: 4rem 1rem 10rem 1rem;
+      text-align: left;
+      position: relative;
+    }
+
+    nav {
+      background-color: #005b96;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #005b96;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #003f5c;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #0077b6;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .botao:hover {
+      background-color: #00b4d8;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Inclusão Digital Sobre Rodas</h1>
+    <p>Levando tecnologia e esperança para onde mais precisa.</p>
+  </header>
+
+  <nav>
+    <a href="#projeto">O Projeto</a>
+    <a href="#oficinas">Oficinas</a>
+    <a href="#impacto">Impacto</a>
+    <a href="#ajuda">Como Ajudar</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="projeto">
+    <h2>Sobre o Projeto</h2>
+    <p>Inclusão Digital Sobre Rodas é um projeto filantrópico que leva educação tecnológica a comunidades vulneráveis
+      usando um ônibus adaptado como laboratório móvel. Utilizamos equipamentos reaproveitados e software livre para
+      criar oportunidades onde elas são mais necessárias.</p>
+  </section>
+
+  <section id="oficinas">
+    <h2>Nossas Oficinas</h2>
+    <ul>
+      <li><strong>Tecnologias Livres:</strong> Introdução ao Linux e filosofia open source</li>
+      <li><strong>Multimídia Criativa:</strong> Edição de imagens, som e vídeo</li>
+      <li><strong>Programação:</strong> Scratch, Python e criação de sites</li>
+      <li><strong>Tecnologias Emergentes:</strong> Robótica e uso ético da IA</li>
+    </ul>
+  </section>
+
+  <section id="impacto">
+    <h2>Impacto Social</h2>
+    <ul>
+      <li>200+ atendimentos mensais</li>
+      <li>80% de redução de lixo eletrônico</li>
+      <li>Certificação digital para participantes</li>
+      <li>Parcerias com empregadores e ONGs locais</li>
+    </ul>
+  </section>
+
+  <section id="ajuda">
+    <h2>Como Ajudar</h2>
+    <p>Estamos em busca de parceiros para:</p>
+    <ul>
+      <li>Doações de equipamentos e veículos</li>
+      <li>Apoio técnico e voluntariado</li>
+      <li>Parcerias com empresas e secretarias de educação</li>
+    </ul>
+    <a class="botao" href="#contato">Quero Ajudar</a>
+  </section>
+
+  <section class="galeria">
+    <img src="./img/3.png" alt="Laboratório móvel 1">
+    <img src="./img/2.png" alt="Laboratório móvel 2">
+    <img src="./img/1.png" alt="Laboratório móvel 3">
+    <img src="./img/0.png" alt="Laboratório móvel 4">
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><strong>Leandro M. da Costa</strong></p>
+    <p>Email: <a href="mailto:leandro_dacosta@yahoo.com">leandro_dacosta@yahoo.com</a></p>
+    <p>WhatsApp: (48) 99839-8538</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Inclusão Digital Sobre Rodas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
